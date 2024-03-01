@@ -1,0 +1,21 @@
+@mixin Open_Sans($condition, $fontsize, $fontweight, $fontlinegeight:normal) {
+  font-family: "Open Sans", $condition;
+  font-size: $fontsize;
+  font-weight: $fontweight;
+  line-height: $fontlinegeight;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@mixin Roboto($condition, $fontsize, $fontweight, $fontlinegeight:normal) {
+  font-family: "Roboto", $condition;
+  font-size: $fontsize;
+  font-weight: $fontweight;
+  line-height: $fontlinegeight;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

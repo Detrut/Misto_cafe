@@ -1,0 +1,45 @@
+@import "../_variable/mixin.scss";
+
+.footer {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #F7F7F7;
+
+  &__conatiner {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0 0 26px;
+  }
+
+  &__adress {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+  }
+
+  &__button {
+    padding: 0px 0 0 30px;
+  }
+
+  &__title {
+    @include Roboto(sans-serif, 24px, 700, 18px);
+    color: #C94D18;
+    padding-bottom: 30px;
+  }
+
+  &__text {
+    @include Open_Sans(sans-serif, 16px, 400, 24px);
+    color: #555555;
+  }
+
+  &__contact {
+    padding-top: 78px;
+  }
+
+  &__socials {
+    display: flex;
+    padding: 12px 0 170px;
+    gap: 12px;
+  }
+}

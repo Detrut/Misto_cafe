@@ -1,0 +1,65 @@
+@import "../_variable/mixin.scss";
+
+.button {
+  background-color: transparent;
+  border: none;
+
+  &--type--scroll-down {
+    fill: #ffffff;
+    transform: rotate(90deg);
+  }
+
+  &--type--coffee {
+    fill: #ffffff;
+    margin-left: 74px;
+  }
+  &--type--scroll-left {
+    fill: #C4C4C4;
+  }
+
+  &--type--scroll-right {
+    fill: #C94D18;
+  }
+
+  &--type--select {
+    @include Roboto(sans-serif, 14px, 700, 14px);
+    text-align: center;
+    color: #C4C4C4;
+    width: 134px;
+    height: 50px;
+
+    &.is-active {
+      color: #101010;
+      box-shadow: 0 3px 1px -1px #C94D18;
+    }
+  }
+
+  &--type--scroll-up {
+    display: block;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    border: 1px solid #101010;
+  }
+
+  &--type--show {
+    width: 226px;
+    height: 56px;
+    background-color: #ffffff;
+    @include Open_Sans(sans-serif, 14px, 700, 14px);
+    text-align: center;
+    color: #C94D18;
+    margin: 14px 80px 0 0;
+
+    &.is-colored-button {
+      background-color: #C94D18;
+      color: #ffffff;
+    }
+  }
+
+  &--type--close {
+    width: 44px;
+    height: 44px;
+    fill: #555555;
+  }
+}

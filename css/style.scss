@@ -1,0 +1,22 @@
+@import "null_style.scss";
+@import "../modules/main.scss";
+
+html {
+  background-color: #333333;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+
+.main {
+  width: 1440px;
+  margin: 0 auto;
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    background: #C6C6C6;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: #C94D18;
+  }
+}

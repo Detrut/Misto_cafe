@@ -1,0 +1,54 @@
+@import "../_variable/mixin.scss";
+
+.link {
+  @include Roboto (light, 16px, 300, 27px);
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  & > svg {
+    fill: #C94D18;
+    padding-right: 6px;
+  }
+
+  &.link--type {
+    &--news {
+      display: flex;
+      gap: 22px;
+      @include Open_Sans(sans-serif, 16px, 400, 24px);
+      color: #656565;
+    }
+
+    &--clients {
+      padding-top: 10px;
+      @include Open_Sans(sans-serif, 14px, 400, 14px);
+      color: #101010;
+      text-decoration: underline;
+    }
+
+    &--footer > svg {
+      fill: #555555;
+    }
+
+    &--header {
+      @include Open_Sans(sans-serif, 14px, 700, 14px);
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+
+      & > svg {
+        fill: #ffffff;
+        margin-right: 26px;
+      }
+
+      &.is-colored > svg {
+        fill: #C94D18;
+      }
+
+      &.is-colored {
+        color: #101010;
+      }
+    }
+  }
+}

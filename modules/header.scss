@@ -1,0 +1,43 @@
+.header {
+  position: relative;
+  width: 1440px;
+  display: flex;
+  margin: 0 auto;
+
+  &__menu {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    justify-content: space-between;
+    padding-left: 40px;
+    width: 1440px;
+
+    &.header--type--sticky {
+      position: fixed;
+      width: 1400px;
+      top: 0;
+      background-color: #ffffff;
+      animation: slideDown 0.35s ease-out;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

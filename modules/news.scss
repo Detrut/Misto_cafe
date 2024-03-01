@@ -1,0 +1,69 @@
+@import "../_variable/mixin.scss";
+
+.news {
+  background-color: #ffffff;
+  display: flex;
+  padding: 90px 0 160px 186px;
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+  }
+
+  &__label {
+    @include Open_Sans(sans-serif, 12px, 700, 14px);
+    color: #C94D18;
+  }
+
+  &__title {
+    padding: 12px 0 28px;
+    @include Roboto (light, 42px, 300, 50px);
+    color: #101010;
+  }
+
+  &__text {
+    @include Open_Sans(sans-serif, 16px, 400, 24px);
+    color: #656565;
+    padding-bottom: 78px;
+  }
+
+  &__container {
+    padding-left: 130px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__date {
+    color: #999999;
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  &__content {
+    width: 300px;
+    padding-top: 8px;
+    @include Open_Sans(sans-serif, 18px, 400, 27px);
+    color: #656565;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    padding: 0 70px 30px 0;
+  }
+
+  &__main {
+    font-weight: 700;
+    color: #101010;
+  }
+}

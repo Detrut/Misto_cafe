@@ -1,0 +1,88 @@
+@import "../_variable/mixin.scss";
+
+.about {
+  &__background {
+    position: relative;
+    height: 750px;
+    display: flex;
+    background: url('../img/background.png') no-repeat 50% 50% / 100% 100%;
+  }
+
+  &__scroll {
+    display: flex;
+    width: 330px;
+    justify-content: space-between;
+    transform: rotate(-90deg);
+    position: absolute;
+    align-items: center;
+    left: -77px;
+    bottom: 210px;
+
+    & > p {
+      @include Open_Sans(sans-serif, 14px, 300);
+      letter-spacing: 3px;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 60px 0 66px 300px;
+    gap: 30px;
+  }
+
+  &__container {
+    width: 548px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    padding-bottom: 38px;
+  }
+
+  &__title {
+    @include Roboto(sans-serif, 89px, 400, 93px);
+    color: #ffffff;
+  }
+
+  &__contact {
+    display: flex;
+    padding-top: 24px;
+    gap: 120px;
+  }
+
+  &__link {
+    display: flex;
+    gap: 30px;
+    align-items: end;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: end;
+    fill: #ffffff;
+    gap: 12px;
+
+    & > .about__text {
+      font-size: 16px;
+      padding-right: 2px;
+    }
+  }
+
+  &__text {
+    @include Roboto(light, 18px, 300, 27px);
+    color: #ffffff;
+    align-items: baseline;
+
+    &.is-gray {
+      color: #8f8f8f;
+    }
+  }
+
+  &__social {
+    display: flex;
+    fill: #ffffff;
+    gap: 4px;
+  }
+}

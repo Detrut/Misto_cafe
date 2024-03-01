@@ -1,0 +1,28 @@
+@import "../_variable/mixin.scss";
+
+.history {
+  background-color: #ffffff;
+  display: flex;
+  padding: 0 64px 200px 190px;
+
+  &__content {
+    padding-top: 120px;
+  }
+
+  &__label {
+    @include Open_Sans(sans-serif, 12px, 700, 14px);
+    color: #C94D18;
+  }
+
+  &__title {
+    padding: 6px 0 34px;
+    @include Roboto (light, 42px, 300, 50px);
+    color: #101010;
+  }
+
+  &__text {
+    @include Open_Sans(sans-serif, 16px, 400, 24px);
+    color: #656565;
+    padding-bottom: 24px;
+  }
+}
