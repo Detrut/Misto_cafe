@@ -1,0 +1,85 @@
+@import "../_variable/mixin.scss";
+
+.clients {
+  background-color: #ffffff;
+  padding: 140px 0 166px 188px;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__content {
+    margin-right: 204px;
+  }
+
+  &__title {
+    padding: 12px 0 78px;
+    @include Open_Sans(sans-serif, 42px, 300, 50px);
+    color: #101010;
+  }
+
+  &__scroll {
+    display: flex;
+    gap: 26px;
+    margin-left: -4px;
+  }
+
+  &__pages {
+    display: flex;
+    align-items: baseline
+  }
+
+  &__page {
+    @include Open_Sans(sans-serif, 16px, 400, 24px);
+    text-align: left;
+    color: #101010;
+  }
+
+  &--type--deactive {
+    font-family: "Montserrat", sans-serif;
+    color: #999999;
+  }
+
+  &__comments {
+    display: flex;
+  }
+
+  &__comment {
+    margin-right: 30px;
+
+    &::before {
+      content: '';
+      padding-right: 40px;
+      background: url('../img/icons/quotation.svg') no-repeat;
+      width: 78px;
+      height: 66px;
+    }
+
+    &.is-blur-block {
+      opacity: 0.2;
+      display: flex;
+      overflow: hidden;
+    }
+
+    &.is-hidden-block {
+      display: none;
+    }
+
+    &.is-show-block {
+      display: flex;
+    }
+  }
+
+  &__text {
+    width: 400px;
+    @include Open_Sans(light, 22px, 300, 33px);
+    color: #101010;
+    padding-bottom: 42px;
+  }
+
+  &__label {
+    @include Open_Sans(sans-serif, 12px, 700, 16px);
+    color: #C94D18;
+  }
+}

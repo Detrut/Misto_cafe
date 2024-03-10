@@ -1,0 +1,65 @@
+@import "../_variable/mixin.scss";
+
+.special {
+  background-color: #ffffff;
+  padding-right: 190px;
+
+  &__wrapper {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: end;
+    padding: 150px  30px 150px 0;
+  }
+
+  &__content {
+    padding: 0 180px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    @include Open_Sans(sans-serif, 12px, 700, 14px);
+    color: #C94D18;
+  }
+
+  &__title {
+    padding-top: 8px;
+    @include Open_Sans(light, 42px, 300, 50px);
+    color: #101010;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 68px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 154px;
+  }
+
+  &__choose {
+    padding: 0 10px;
+    @include Roboto (sans-serif, 18px, 700, 24px);
+    color: #C94D18;
+  }
+
+  &__price {
+    padding: 30px 0 4px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 42px;
+    color: #101010;
+  }
+
+  &__cost {
+    font-size: 24px;
+  }
+
+  &__text {
+    @include Open_Sans(sans-serif, 16px, 400, 24px);
+    color: #555555;
+  }
+}
