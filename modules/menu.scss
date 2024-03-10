@@ -59,6 +59,7 @@
     border-bottom: 2px dotted #101010;
     flex-grow: 1;
   }
+
   &__price {
     @include Open_Sans(sans-serif, 18px, 500, 18px);
     color: #101010;

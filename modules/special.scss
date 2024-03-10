@@ -19,9 +19,6 @@
 
   &__label {
     @include Open_Sans(sans-serif, 12px, 700, 14px);
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 14px;
     color: #C94D18;
   }
 
@@ -57,7 +54,7 @@
     color: #101010;
   }
 
-  &__span {
+  &__cost {
     font-size: 24px;
   }
 

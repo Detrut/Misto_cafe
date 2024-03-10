@@ -45,16 +45,16 @@
     display: flex;
   }
 
-  &__comment::before {
-    content: '';
-    padding-right: 40px;
-    background: url('../img/icons/quotation.svg') no-repeat;
-    width: 78px;
-    height: 66px;
-  }
-
   &__comment {
     margin-right: 30px;
+
+    &::before {
+      content: '';
+      padding-right: 40px;
+      background: url('../img/icons/quotation.svg') no-repeat;
+      width: 78px;
+      height: 66px;
+    }
 
     &.is-blur-block {
       opacity: 0.2;

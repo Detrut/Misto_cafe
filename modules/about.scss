@@ -52,7 +52,7 @@
     gap: 120px;
   }
 
-  &__link {
+  &__links {
     display: flex;
     gap: 30px;
     align-items: end;
@@ -80,9 +80,10 @@
     }
   }
 
-  &__social {
+  &__socials {
     display: flex;
     fill: #ffffff;
     gap: 4px;
+    align-items: center;
   }
 }
